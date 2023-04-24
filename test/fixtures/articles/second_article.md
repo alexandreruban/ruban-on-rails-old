@@ -1,4 +1,5 @@
 ---
+slug: second-article
 meta_title: Second meta title
 meta_description: Second meta description
 ---
