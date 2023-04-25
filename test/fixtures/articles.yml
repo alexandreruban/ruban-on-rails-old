@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  meta_title: MyString
+  meta_description: MyString
+  content: MyText
+
+two:
+  meta_title: MyString
+  meta_description: MyString
+  content: MyText
