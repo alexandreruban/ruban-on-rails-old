@@ -1,0 +1,56 @@
+.course-card {
+  width: 100%;
+  max-width: 80ch;
+  margin-right: auto;
+  margin-left: auto;
+
+  border-radius: 0.5rem;
+  box-shadow: 0 0.25rem 2rem hsla(202, 16%, 90%, 50%);
+  overflow: hidden;
+
+  @include media(tabletPortrait) {
+    display: flex;
+  }
+
+  &__image-wrapper {
+    flex-shrink: 0;
+    height: 20rem;
+
+    @include media(tabletPortrait) {
+      width: 15rem;
+      height: auto;
+    }
+  }
+
+  &__image {
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+    width: 100%;
+  }
+
+  &__content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+    padding: 1rem;
+  }
+
+  &__title {
+    font-size: 150%;
+    margin-bottom: 1rem;
+  }
+
+  &__description {
+    margin-bottom: 2rem;
+  }
+
+  &__footer {
+    margin-top: auto;
+
+    @include media(tabletPortrait) {
+      align-self: flex-end;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  flex: 0 0 auto;
+  gap: 0.25rem;
+  padding: 0.15rem 0.5rem;
+  border-radius: 999px;
+  font-weight: bold;
+  text-decoration: none;
+
+  &--primary {
+    color: var(--color-primary-text-body);
+    background-color: var(--color-primary-background);
+  }
+
+  &--small {
+    font-size: 87.5%;
+  }
+}
