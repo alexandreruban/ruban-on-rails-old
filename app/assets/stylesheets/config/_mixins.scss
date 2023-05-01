@@ -1,0 +1,9 @@
+@mixin media($query) {
+  @if $query == tabletPortrait {
+    @media (min-width: 40em) { @content; }
+  } @else if $query == tabletLandscape {
+    @media (min-width: 66em) { @content; }
+  } @else if $query == desktop {
+    @media (min-width: 94em) { @content; }
+  }
+}

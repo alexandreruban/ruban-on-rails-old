@@ -1,0 +1,19 @@
+:root {
+  --font-family-serif: 'Merriweather', serif;
+  --font-family-mono: 'Fira Code', monospace;
+
+  --font-size-base: clamp(1rem, 0.75rem + 0.5vw, 1.5rem);
+
+  --line-height-header: 1.1;
+  --line-height-body: 1.65;
+
+  --color-text-header: hsl(202, 28%, 17%);
+  --color-text-body:   hsl(202, 23%, 24%);
+
+  --color-suface: hsl(202, 17%, 97%);
+
+  --color-primary-background: hsl(348, 80%, 95%);
+  --color-primary-text-body: hsl(348, 60%, 58%);
+
+  --color-secondary-text-body: hsl(209, 60%, 50%);
+}

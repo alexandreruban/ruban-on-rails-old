@@ -1,0 +1,86 @@
+.homepage {
+  @include media(tabletLandscape) {
+    display: flex;
+  }
+
+  &__section {
+    padding: 1rem;
+
+    @include media(tabletLandscape) {
+      padding: 2rem;
+    }
+  }
+
+  &__hero-section {
+    flex: 1 0 min-content;
+
+    display: flex;
+    flex-direction: column;
+
+    overflow: auto;
+    background-color: var(--color-suface);
+
+    @include media(tabletPortrait) {
+      text-align: center;
+    }
+
+    @include media(tabletLandscape) {
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      text-align: left;
+    }
+  }
+
+  &__main-title {
+    font-size: 500%;
+    line-height: 1;
+
+    & br {
+      display: none;
+    }
+
+    @include media(tabletLandscape) {
+      & br {
+        display: initial;
+      }
+    }
+  }
+
+  &__tagline {
+    margin: 1rem auto;
+    font-size: 125%;
+    max-width: 60ch;
+  }
+
+  &__newsletter-link {
+    display: inline-block;
+    font-style: italic;
+    font-size: 125%;
+    margin-bottom: 2rem;
+    color: var(--color-secondary-text-body);
+  }
+
+  &__courses-section {
+    flex: 3 1 40rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  &__social-links {
+    margin-top: auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    @include media(tabletPortrait) {
+      justify-content: center;
+    }
+
+    @include media(tabletLandscape) {
+      justify-content: flex-start;
+    }
+  }
+}
